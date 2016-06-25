@@ -1,0 +1,37 @@
+{
+  "name": "ts-router",
+  "version": "0.0.1",
+  "description": "a simple TypeScript router with a fallback for older browsers",
+  "main": "dist/src/router.js",
+  "typings": "dist/src/router.d.ts",
+  "files": [
+    "dist/src"
+  ],
+  "scripts": {
+    "test": "node_modules/.bin/jasmine",
+    "buildSmokeTest": "node_modules/.bin/ browserify dist/smokeTest/smokeTest.js -o dist/smokeTest/bundle.js",
+    "serveSmokeTest": "lite-server smokeTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duffleit/ts-navigate.git"
+  },
+  "keywords": [
+    "router",
+    "navigation",
+    "typescript"
+  ],
+  "author": "david leitner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duffleit/ts-navigate/issues"
+  },
+  "homepage": "https://github.com/duffleit/ts-navigate#readme",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "jasmine": "2.4.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "lite-server": "^2.2.0"
+  }
+}
